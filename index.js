@@ -26,7 +26,7 @@ function verifyJWT(req, res, next) {
         req.decoded = decoded
         next()
     })
-   
+
 
 }
 
@@ -69,6 +69,10 @@ async function run() {
             if (result.deletedCount === 1) {
                 res.send(result)
             }
+        })
+
+        app.get('/hero', (req, res) => {
+            res.send('I am hero')
         })
 
         //auth jwt
