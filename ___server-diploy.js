@@ -7,5 +7,7 @@
 ---------------
 for each project one time
 ------------
-
+1. heroku create
+2. make sure git add git commit,git push
+3.git push heroku main
 */
